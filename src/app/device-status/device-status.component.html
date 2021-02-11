@@ -1,0 +1,10 @@
+<div id="statusContainer">
+    {{title}}<br>
+    <div id="iconContainer">
+        <div *ngFor="let alert of alertList">
+            <div>
+                <mat-icon class="icon" aria-hidden="true">{{alert.icon}}</mat-icon> {{alert.value}}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<div id="detailContainer">
+    <p>{{getTitle()}}</p>
+    <p>{{getCurrentValue()}}
+        {{getTopMeasurementDescription()}}</p>
+</div>
+<mat-progress-bar class="progress-margin" [mode]="getProgressBarMode()" [value]="getCurrentPercentValue()"
+    [bufferValue]="0">
+</mat-progress-bar>
+<div id="descriptionContainer">
+    <p>
+        {{getBottomDescription()}} {{getMaxValue()}} {{getBottomMeasurementDescription()}}
+    </p>
+</div>

@@ -1,0 +1,14 @@
+<br><br>
+<div id="container">
+  <div id="firstHeader">
+    <div id="details">
+      <div id="detail" *ngFor="let obj of newArray">
+        <app-general-detail [title]="obj.title" [currentValue]="obj.value" [topMeasurementDescription]="obj.topM"
+          [maxValue]="obj.maxValue" [bottomMeasurementDescription]="obj.bottomM" [bottomDescription]="obj.bottomD">
+        </app-general-detail>
+      </div>
+    </div>
+    <app-device-status [title]="'DEVICE STATUS'" [alertList]="alertLi"></app-device-status>
+    <app-hambugermenu></app-hambugermenu>
+  </div>
+</div>
